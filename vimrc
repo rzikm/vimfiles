@@ -2,8 +2,14 @@ set nocompatible              " be iMproved
 filetype off                  " required
 
 " set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
+if has('win32') || has('win32unix')
+	set rtp+=~/vimfiles/bundle/Vundle.vim
+	call vundle#begin('~/vimfiles/bundle')
+else
+	set rtp+=~/.vim/bundle/Vundle.vim
+	call vundle#begin('~/.vim/bundle')
+endif
+
 Plugin 'VundleVim/Vundle.vim'
 
 " syntax highlight
@@ -26,6 +32,7 @@ Plugin 'ervandew/supertab'
 " directory tree navigation
 Plugin 'kien/ctrlp.vim'
 Plugin 'scrooloose/nerdtree'
+Plugin 'mileszs/ack.vim'
 
 " Latex support?
 Plugin 'xuhdev/vim-latex-live-preview'
@@ -58,6 +65,11 @@ let g:ycm_key_list_select_completion = ['<C-j>', '<Down>']
 let g:ycm_key_list_previous_completion = ['<C-k>', '<Up>']
 let g:SuperTabDefaultCompletionType = '<C-n>'
 set completeopt-=preview "disable preview window"
+
+" Ack.vim settings
+if executable('ag')
+  let g:ackprg = 'ag --vimgrep'
+endif
 
 " ultisnips controls
 let g:UltiSnipsExpandTrigger = '<Tab>'
