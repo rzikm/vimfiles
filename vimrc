@@ -116,6 +116,10 @@ set tabstop=2
 set smartindent
 set textwidth=100
 
+" Splitting
+set splitright
+set splitbelow
+
 " vim files settings
 set noswapfile
 set noundofile
