@@ -1,2 +1,4 @@
 #do not synchronize the Vundle.Vim packages
 bundle
+#but allow Vundle submodule
+!bundle/Vundle.vim
