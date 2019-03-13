@@ -15,11 +15,15 @@ Plugin 'VundleVim/Vundle.vim'
 " syntax highlight
 Plugin 'scrooloose/syntastic'
 
+Plugin 'klen/python-mode'
+Plugin 'sheerun/vim-polyglot'
+
 " IDE 
 Plugin 'bling/vim-airline'
-Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-fugitive' "git support
 Plugin 'tpope/vim-surround'
 Plugin 'majutsushi/tagbar'
+Plugin 'airblade/vim-gitgutter' "git diff column
 
 " code completion
 Plugin 'Valloric/YouCompleteMe'
