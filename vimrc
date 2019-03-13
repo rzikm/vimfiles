@@ -68,11 +68,6 @@ map <C-n> ;NERDTreeToggle<CR>
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
 
-" Python settings
-au BufNewFile,BufRead *.py
-    \ autoindent
-    \ fileformat=unix
-
 " handle encoding
 set encoding=utf-8
 set fileencoding=utf-8
