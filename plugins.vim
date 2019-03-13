@@ -14,8 +14,6 @@ Plugin 'VundleVim/Vundle.vim'
 
 " syntax highlight
 Plugin 'scrooloose/syntastic'
-
-Plugin 'klen/python-mode'
 Plugin 'sheerun/vim-polyglot'
 
 " IDE 
@@ -29,6 +27,9 @@ Plugin 'airblade/vim-gitgutter' "git diff column
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'SirVer/ultisnips'
+
+" python goodies
+Plugin 'klen/python-mode'
 
 " compatibility between YCM and ultisnips
 Plugin 'ervandew/supertab'
