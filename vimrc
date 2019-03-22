@@ -50,12 +50,15 @@ let g:UltiSnipsUsePythonVersion = 3
 let g:solarized_visibility = "high"
 let g:solarized_contrast = "high"
 let g:solarized_termcolors = 256
+
+" configure look
+set guifont=Consolas:h12
+colorscheme solarized
 if has("gui_running")
-	set t_Co=256
-	let g:solarized_termtrans=1
-	set background=dark
-	colorscheme solarized
+	"set background=dark
 else
+	"let g:solarized_termtrans=1
+	"set term=xterm
 	set t_Co=256
 endif
 
@@ -101,11 +104,6 @@ set ic
 set incsearch
 set hlsearch
 set backspace=indent,eol,start
-
-" set look
-set guifont=Consolas:h12
-"colorscheme torte
-colorscheme solarized
 
 set rnu "relative numbers
 set nu "line numbering

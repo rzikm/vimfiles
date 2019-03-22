@@ -21,7 +21,7 @@ Plugin 'bling/vim-airline'
 Plugin 'tpope/vim-fugitive' "git support
 Plugin 'tpope/vim-surround'
 Plugin 'majutsushi/tagbar'
-Plugin 'airblade/vim-gitgutter' "git diff column
+"Plugin 'airblade/vim-gitgutter' "git diff column
 
 " code completion
 Plugin 'Valloric/YouCompleteMe'
@@ -29,7 +29,7 @@ Plugin 'altercation/vim-colors-solarized'
 Plugin 'SirVer/ultisnips'
 
 " python goodies
-Plugin 'klen/python-mode'
+"Plugin 'klen/python-mode'
 
 " compatibility between YCM and ultisnips
 Plugin 'ervandew/supertab'
