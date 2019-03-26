@@ -55,15 +55,15 @@ let g:solarized_termcolors = 256
 set guifont=Consolas:h12
 colorscheme solarized
 if has("gui_running")
-	"set background=dark
 else
-	"let g:solarized_termtrans=1
-	"set term=xterm
+	let g:solarized_termtrans=1
+	"set term=xterm-256colors
+	set background=dark
 	set t_Co=256
 endif
 
 " TagBar settings
-nmap <F8> :TagbarToggle<CR>
+nmap <F8> ;TagbarToggle<CR>
 
 " nerdtree settings
 map <C-n> ;NERDTreeToggle<CR>
