@@ -7,8 +7,3 @@ print(os.popen("git submodule update --init").read())
 
 print("Installing plugins")
 subprocess.call("vim -u plugins.vim +PluginInstall +qall", shell=True)
-
-print("Compiling YouCompleteMe")
-sys.path.append("bundle/YouCompleteMe")
-import install
-install.Main()
